@@ -1,0 +1,169 @@
+/* Waybar Стиль (Catppuccin Frappe) */
+
+/* Цвета Catppuccin Frappe */
+@define-color rosewater #f5e0dc;
+@define-color flamingo #f2cdcd;
+@define-color pink #fbc5c5;
+@define-color mauve #cba6f7;
+@define-color red #f38ba8;
+@define-color maroon #eba0ac;
+@define-color peach #fab387;
+@define-color yellow #f9e2af;
+@define-color green #a6e3a1;
+@define-color teal #94e2d5;
+@define-color sky #89dceb;
+@define-color sapphire #74c7ce;
+@define-color blue #89b4fa;
+@define-color lavender #b4befe;
+@define-color text #c6d0f5;
+@define-color subtext1 #b5c0e0;
+@define-color subtext0 #a5adcb;
+@define-color overlay2 #949cbb;
+@define-color overlay1 #838ba7;
+@define-color overlay0 #737994;
+@define-color surface2 #626880;
+@define-color surface1 #51576d;
+@define-color surface0 #414559;
+@define-color base #303446;
+@define-color mantle #292c3c;
+@define-color crust #232637;
+
+* {
+  border: none;
+  border-radius: 0px;
+  font-family: "Inter", sans-serif; /* Используйте Inter или ваш любимый шрифт */
+  font-size: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+  background-color: @base; /* Основной фон панели */
+  color: @text; /* Цвет текста по умолчанию */
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-bottom: 2px solid @mantle; /* Небольшая граница снизу */
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+/* Общие стили для всех модулей */
+#workspaces,
+#clock,
+#battery,
+#language, /* ИСПРАВЛЕНО: Правильный селектор для модуля языков */
+#pulseaudio,
+#bluetooth,
+#custom-power {
+  padding: 0 8px;
+  background-color: @crust; /* Фон модулей */
+  margin: 5px 0px;
+  border-radius: 7px; /* Скругленные углы */
+  color: @text;
+}
+
+/* Стили для левой части (рабочие столы) */
+#workspaces {
+  margin-left: 5px;
+  padding-right: 5px;
+  margin-right: 15px;
+}
+
+#workspaces button {
+  background-color: transparent;
+  color: @overlay0; /* Цвет неактивных рабочих столов */
+  padding: 0 5px;
+}
+
+#workspaces button.active {
+  color: @blue; /* Цвет активного рабочего стола */
+  background-color: @surface0;
+  border-radius: 8px;
+}
+
+#workspaces button.urgent {
+  color: @red; /* Цвет срочного рабочего стола */
+}
+
+#workspaces button:hover {
+  background-color: @surface1;
+  color: @lavender;
+  border-radius: 8px;
+}
+
+/* Стили для центральной части (часы) */
+#clock {
+  margin-right: 8px;
+  margin-left: 8px;
+  background-color: @crust;
+  color: @green; /* Цвет часов */
+}
+
+/* Стили для правой части */
+#battery {
+  background-color: @crust;
+  color: @peach; /* Цвет батареи */
+}
+
+#battery.charging,
+#battery.plugged {
+  color: @green; /* Цвет при зарядке/подключении */
+}
+
+#battery.warning:not(.charging) {
+  color: @yellow; /* Цвет при низком заряде */
+}
+
+#battery.critical:not(.charging) {
+  color: @red; /* Цвет при критическом заряде */
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Анимация мигания для критического заряда батареи */
+@keyframes blink {
+  to {
+    background-color: @red;
+    color: @crust;
+  }
+}
+
+/* Стили для модуля языков (hyprland/language) */
+#language {
+  /* ИСПРАВЛЕНО: Правильный селектор для модуля языков */
+  color: @mauve; /* Цвет текста */
+}
+
+#pulseaudio {
+  background-color: @crust;
+  color: @sapphire; /* Цвет звука */
+}
+
+#pulseaudio.muted {
+  color: @overlay0; /* Цвет при выключенном звуке */
+}
+
+#bluetooth {
+  background-color: @crust;
+  color: @lavender; /* Цвет Bluetooth */
+}
+
+#bluetooth.disabled {
+  color: @overlay0; /* Цвет при выключенном Bluetooth */
+}
+
+/* Стили для кнопки выключения */
+#custom-power {
+  background-color: @crust;
+  color: @red; /* Цвет кнопки выключения */
+  margin-right: 8px;
+}
+
+#custom-power:hover {
+  background-color: @red;
+  color: @crust;
+}

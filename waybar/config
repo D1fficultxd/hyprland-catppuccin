@@ -1,0 +1,113 @@
+// Waybar конфигурация
+{
+    "mode": "dock",
+    "passthrough": "true",
+    "layer": "top", // Всегда сверху
+    "position": "top", // Позиция панели
+    "height": 37, // Высота панели (согласно вашему config.txt)
+    "spacing": 2, // Пространство между модулями (согласно вашему config.txt)
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "battery",
+        "pulseaudio",
+        "bluetooth",
+        "hyprland/language",
+        "custom/power"
+    ],
+
+    // Модуль рабочих столов (для Hyprland)
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "", // Активный рабочий стол
+            "default": "", // Неактивный рабочий стол
+            "empty": "" // Пустой рабочий стол
+        },
+        "on-click": "activate",
+        "all-outputs": true // Показывать рабочие столы на всех мониторах
+    },
+
+
+     "custom/playerctl": {
+         "format": "{icon} {artist} - {title}",
+         "format-icons": {
+             "Playing": "",
+             "Paused": "",
+             "Stopped": ""
+         },
+         "return-type": "json",
+         "exec": "playerctl --player=playerctld metadata --format '{\"text\": \"{{artist}} - {{title}}\", \"tooltip\": \"{{playerName}}: {{artist}} - {{title}}\", \"alt\": \"{{status}}\"}' -F",
+        "on-click": "playerctl play-pause",
+         "on-scroll-up": "playerctl next",
+         "on-scroll-down": "playerctl previous"
+     },
+
+    // Модуль часов (согласно вашему config.txt)
+    "clock": {
+        "format": "  {:%H:%M:%S}", // Формат времени (например, 14:30:00)
+        "tooltip-format": " {:%Y-%m-%d %A}", // Формат всплывающей подсказки (например, 2023-10-27 Пятница)
+        "interval": 1 // Обновлять каждую секунду
+    },
+
+    // Модуль батареи (согласно вашему config.txt)
+    "battery": {
+        "format": "{icon}  {capacity}%",
+        "format-charging": "充电 {capacity}%", // Зарядка
+        "format-plugged": "插头 {capacity}%", // Подключено
+        "format-alt": "{time} {icon}", // Альтернативный формат
+        "format-icons": ["", "", "", "", ""], // Иконки батареи
+        "states": {
+            "good": 90,
+            "warning": 30,
+            "critical": 15
+        },
+        "tooltip": true
+    },
+
+  "hyprland/language": {
+    "format": " {}",
+    "on-click": "grp:caps_toggle"
+  },
+
+    // Модуль звука (согласно вашему config.txt)
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "format-muted": "  Выкл.", // Выключен звук
+        "format-icons": {
+            "default": ["", "", ""] // Иконки звука
+        },
+        "on-click": "pavucontrol", // Переключить звук (согласно вашему config.txt)
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1%", // Увеличить громкость (согласно вашему config.txt)
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%", // Уменьшить громкость (согласно вашему config.txt)
+        "tooltip": true
+    },
+
+    // Модуль Bluetooth (согласно вашему config.txt)
+    "bluetooth": {
+        "format": " {status}",
+        "format-disabled": " Выкл.", // Bluetooth выключен
+        "format-connected": " {device_alias}", // Подключено к устройству
+        "tooltip-format": "{controller_alias}\n{device_alias}",
+        "tooltip-format-connected": "{controller_alias}\n{device_alias}",
+        "tooltip-format-disabled": "Bluetooth выключен",
+        "on-click": "blueberry", // Открыть менеджер Bluetooth (согласно вашему config.txt)
+        "status-icons": {
+            "disabled": "",
+            "enabled": ""
+        }
+    },
+
+    // Пользовательская кнопка выключения (согласно вашему config.txt)
+    "custom/power": {
+        "format":"", // Иконка кнопки выключения
+        "tooltip": "Меню питания",
+        "on-click": "wlogout -p layer-shell", // Вызывает wlogout для меню питания
+        "interval": "once"
+    }
+}

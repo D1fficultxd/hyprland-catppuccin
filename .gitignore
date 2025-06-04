@@ -32,6 +32,7 @@ kiorc
 trashrc
 pavucontrol.ini
 user-dirs.dirs
+user-dirs.locale
 yandex-music.conf
 QtProject.conf
 ktrashrc
@@ -39,4 +40,5 @@ kactivitymanagerdrc
 mimeapps.list
 okularpartrc
 kservicemenurc
-user-dirs.locale
+user-dirs.localeW
+spine

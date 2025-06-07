@@ -14,3 +14,7 @@ obsidian neovim dolphin kitty
 hypridle hyprlock hyprshot hyprutils hyprpaper flatpak bluez blueberry
 libreoffice kdeconnect
 ```
+For zsh:
+```
+git clone --depth=1 https://github.com/mattmc3/antidote.git ${ZDOTDIR:-~}/.antidote
+```

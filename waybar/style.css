@@ -62,6 +62,14 @@ window#waybar.hidden {
   border-radius: 7px; /* Скругленные углы */
   color: @text;
 }
+#custom-swaync {
+  padding: 0 8px;
+  background-color: @crust;
+  margin: 5px 0px;
+  border-radius: 7px;
+  color: @text;
+}
+
 
 /* Стили для левой части (рабочие столы) */
 #workspaces {
@@ -167,3 +175,26 @@ window#waybar.hidden {
   background-color: @red;
   color: @crust;
 }
+
+
+#custom-swaync {
+  background-color: @crust;
+  color: @text;
+}
+
+#custom-swaync.notification {
+  color: @red;
+}
+
+#custom-swaync.dnd-notification {
+  color: @yellow;
+}
+
+#custom-swaync.inhibited-notification {
+  color: @blue;
+}
+
+#custom-swaync.dnd-inhibited-notification {
+  color: @mauve;
+}
+

@@ -1,0 +1,222 @@
+[
+  {
+    "name": "panel-top",
+    "output": "",
+    "layer": "bottom",
+    "position": "top",
+    "controls": "right",
+    "width": "auto",
+    "height": 30,
+    "homogeneous": true,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "padding-horizontal": 0,
+    "padding-vertical": 0,
+    "spacing": 0,
+    "items-padding": 0,
+    "icons": "light",
+    "css-name": "panel-top",
+    "modules-left": [
+      "hyprland-workspaces",
+      "playerctl"
+    ],
+    "modules-center": [
+      "clock"
+    ],
+    "modules-right": [
+      "tray",
+      "keyboard-layout"
+    ],
+    "controls-settings": {
+      "components": [
+        "battery",
+        "brightness",
+        "volume"
+      ],
+      "commands": {
+        "battery": ""
+      },
+      "show-values": false,
+      "interval": 1,
+      "icon-size": 16,
+      "hover-opens": false,
+      "leave-closes": true,
+      "click-closes": true,
+      "css-name": "controls-window",
+      "custom-items": [
+        {
+          "name": "Bluetooth",
+          "icon": "bluetooth",
+          "cmd": "blueberry"
+        }
+      ],
+      "menu": {
+        "name": "Exit",
+        "icon": "system-shutdown-symbolic",
+        "items": [
+          {
+            "name": "Reboot",
+            "cmd": "systemctl reboot"
+          },
+          {
+            "name": "Shutdown",
+            "cmd": "systemctl -i poweroff"
+          }
+        ]
+      },
+      "show-brightness": false,
+      "show-volume": false,
+      "show-battery": true,
+      "output-switcher": true,
+      "per-app-volume": false,
+      "backlight-controller": "brightnessctl",
+      "backlight-device": "",
+      "window-width": 0,
+      "window-margin-horizontal": 0,
+      "window-margin-vertical": 0,
+      "root-css-name": "controls-overview",
+      "battery-low-level": 20,
+      "battery-low-interval": 3,
+      "processes-label": "Processes",
+      "readme-label": "README",
+      "angle": 0
+    },
+    "tray": {
+      "root-css-name": "tray",
+      "inner-css-name": "inner-tray"
+    },
+    "hyprland-workspaces": {
+      "numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "num-ws": 10,
+      "show-icon": true,
+      "show-inactive-workspaces": true,
+      "show-workspaces-from-all-outputs": true,
+      "image-size": 16,
+      "show-workspaces": true,
+      "show-name": true,
+      "name-length": 25,
+      "show-empty": true,
+      "mark-content": true,
+      "show-names": true,
+      "mark-floating": true,
+      "mark-xwayland": true,
+      "angle": 0
+    },
+    "clock": {
+      "format": "%H:%M:%S",
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "clock",
+      "interval": 1
+    },
+    "playerctl": {
+      "buttons-position": "left",
+      "icon-size": 17,
+      "chars": 30,
+      "scroll": false,
+      "button-css-name": "",
+      "label-css-name": "",
+      "interval": 1,
+      "show-cover": true,
+      "cover-size": 24,
+      "angle": 0
+    },
+    "menu-start": "off",
+    "exclusive-zone": true,
+    "sigrt": 44,
+    "use-sigrt": false,
+    "scratchpad": {},
+    "openweather": {
+      "module-id": "1749300504.8270755",
+      "appid": "d8358987b659d2b58e9b00e680d14b51",
+      "weatherbit-api-key": "",
+      "lat": 51.5008,
+      "long": -0.1246,
+      "lang": "en",
+      "units": "metric",
+      "interval": 1800,
+      "loc-name": "",
+      "weather-icons": "color",
+      "on-right-click": "",
+      "on-middle-click": "",
+      "on-scroll": "",
+      "icon-placement": "start",
+      "icon-size": 24,
+      "css-name": "weather",
+      "show-name": false,
+      "angle": 0,
+      "ow-popup-icons": "light",
+      "popup-header-icon-size": 48,
+      "popup-icon-size": 24,
+      "popup-text-size": "medium",
+      "popup-css-name": "weather-forecast",
+      "popup-placement": "right",
+      "popup-margin-horizontal": 0,
+      "popup-margin-top": 0,
+      "popup-margin-bottom": 0,
+      "show-humidity": true,
+      "show-wind": true,
+      "show-pressure": true,
+      "show-cloudiness": true,
+      "show-visibility": true,
+      "show-pop": true,
+      "show-volume": true
+    },
+    "brightness-slider": {},
+    "dwl-tags": {},
+    "hyprland-taskbar": {},
+    "monitor": "",
+    "run-if-output-exist": [],
+    "run-if-output-absent": [],
+    "width-as-percentage": false,
+    "start-hidden": false,
+    "sway-taskbar": {},
+    "sway-workspaces": {},
+    "sway-mode": {},
+    "hyprland-submap": {},
+    "keyboard-layout": {
+      "keyboard-device-hyprland": "at-translated-set-2-keyboard",
+      "root-css-name": "root-executor",
+      "css-name": "executor-label",
+      "show-icon": true,
+      "icon-size": 16,
+      "interval": 0,
+      "icon-placement": "left",
+      "tooltip-text": "LMB: Next layout, RMB: Menu",
+      "angle": 0
+    },
+    "niri-taskbar": {},
+    "random-wallpaper": {},
+    "pinned": {},
+    "executor-weather": {
+      "script": "curl https://wttr.in/?format=1 -s",
+      "interval": 1800,
+      "css-name": "weather",
+      "on-right-click": "",
+      "icon-size": 16,
+      "show-icon": true,
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "root-css-name": "",
+      "icon-placement": "left"
+    }
+  }
+]

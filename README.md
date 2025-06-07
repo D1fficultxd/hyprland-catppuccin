@@ -7,10 +7,10 @@ yay -S betterbird-bin zen-browser-bin zsh-theme-powerlevel10k-git visual-studio-
 
 For pacman:
 ```
-sudo pacman -S ly zsh wlogout wofi waybar vlc ttf-jetbrains-mono-nerd ttf-hack
+sudo pacman -S ly zsh wlogout wofi vlc ttf-jetbrains-mono-nerd ttf-hack
 ttf-firacode-nerd bitwarden
 ttf-fantasque-nerd pavucontrol obs-studio okular
-obsidian neovim dolphin kitty
+obsidian neovim nautilus kitty
 hypridle hyprlock hyprshot hyprutils hyprpaper flatpak bluez blueberry
 libreoffice kdeconnect
 ```

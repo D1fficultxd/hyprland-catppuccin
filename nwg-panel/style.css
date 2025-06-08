@@ -39,7 +39,7 @@ button {
 }
 
 #task-box-focused {
-  background-color: surface2;
+  background-color: #3a3a3b;
   padding-left: 4px;
   padding-right: 4px;
 }
@@ -48,13 +48,13 @@ button {
 
 /* Sample button in sample config w/ no background nor border */
 #button-custom {
-  background: surface1;
+  background: #51576d;
   border: 0;
 }
 
 /* Top panel in sample config uses this name */
 #panel-top {
-  background: surface0;
+  background: #414559;
   color: #eeeeee;
 }
 
@@ -131,5 +131,5 @@ button {
 
 #dwl-tag-selected {
   border: solid 2px;
-  border-color: overlay0;
+  border-color: #737994;
 }

@@ -11,10 +11,10 @@ compinit
 
 
 alias pu="sudo pacman -Syu"
-alias yu="yay -Syu"
+alias yu="yay -Syu --noconfirm"
 alias nv="nvim"
 alias ps="sudo pacman -S"
-alias ys="yay -S"
+alias ys="yay -S --noconfirm"
 
 eval "$(starship init zsh)"
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh

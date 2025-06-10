@@ -217,6 +217,23 @@
       "on-scroll-down": "",
       "root-css-name": "",
       "icon-placement": "left"
+    },
+    "executor-update": {
+      "script": "pu && yu",
+      "tooltip-text": "",
+      "on-left-click": "exec pu && yu",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "root-css-name": "executor-update",
+      "css-name": "update",
+      "icon-placement": "left",
+      "icon-size": 16,
+      "interval": 1,
+      "angle": 0.0,
+      "sigrt": 34,
+      "use-sigrt": false
     }
   }
 ]

@@ -31,7 +31,8 @@
       "components": [
         "battery",
         "brightness",
-        "volume"
+        "volume",
+        "per-app-volume"
       ],
       "commands": {
         "battery": ""
@@ -79,7 +80,7 @@
       "battery-low-interval": 3,
       "processes-label": "Processes",
       "readme-label": "README",
-      "angle": 0
+      "angle": 0.0
     },
     "tray": {
       "root-css-name": "tray",
@@ -194,11 +195,11 @@
       "root-css-name": "root-executor",
       "css-name": "executor-label",
       "show-icon": true,
-      "icon-size": 16,
-      "interval": 0,
+      "icon-size": 16.0,
+      "interval": 1.0,
       "icon-placement": "left",
       "tooltip-text": "LMB: Next layout, RMB: Menu",
-      "angle": 0
+      "angle": 0.0
     },
     "niri-taskbar": {},
     "random-wallpaper": {},

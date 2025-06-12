@@ -19,7 +19,7 @@ obsidian neovim nautilus kitty
 hypridle hyprlock hyprshot hyprutils hyprpaper hyprsunset
 flatpak bluez blueberry swaync
 libreoffice kdeconnect starship
-calcurse
+calcurse nwg-panel nwg-look
 ```
 For zsh:
 ```

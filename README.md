@@ -1,5 +1,10 @@
 Not all apps are listed yet(it will be updated):
 
+yay installation:
+```
+git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+```
+
 For yay:
 ```
 yay -S --noconfirm betterbird-bin zen-browser-bin zsh-theme-powerlevel10k-git visual-studio-code-bin yandex-music
@@ -12,8 +17,9 @@ ttf-hack ttf-firacode-nerd bitwarden
 ttf-fantasque-nerd pavucontrol obs-studio okular
 obsidian neovim nautilus kitty
 hypridle hyprlock hyprshot hyprutils hyprpaper hyprsunset
-flatpak bluez blueberry
+flatpak bluez blueberry swaync
 libreoffice kdeconnect starship
+calcurse
 ```
 For zsh:
 ```

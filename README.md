@@ -20,10 +20,16 @@ hypridle hyprlock hyprshot hyprutils hyprpaper hyprsunset
 flatpak bluez blueberry swaync
 libreoffice-still kdeconnect starship
 calcurse nwg-panel nwg-look
-qt5ct qt6ct
+qt5ct qt6ct mirage 
 ```
 For zsh:
 ```
 git clone --depth=1 https://github.com/mattmc3/antidote.git ${ZDOTDIR:-~}/.antidote
 ```
 next you should put .zshrc and .zsh-plugins.txt into your /home/$user folder
+
+For flatpak:
+```
+flatpak install flathub org.telegram.desktop
+flatpak install flathub eu.nokun.MirrorHall
+```

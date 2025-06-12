@@ -18,7 +18,7 @@ ttf-fantasque-nerd pavucontrol obs-studio okular
 obsidian neovim nautilus kitty
 hypridle hyprlock hyprshot hyprutils hyprpaper hyprsunset
 flatpak bluez blueberry swaync
-libreoffice kdeconnect starship
+libreoffice-still kdeconnect starship
 calcurse nwg-panel nwg-look
 ```
 For zsh:

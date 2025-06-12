@@ -7,7 +7,7 @@ git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 
 For yay:
 ```
-yay -S --noconfirm betterbird-bin zen-browser-bin zsh-theme-powerlevel10k-git visual-studio-code-bin yandex-music wlogout
+yay -S --noconfirm betterbird-bin zen-browser-bin zsh-theme-powerlevel10k-git visual-studio-code-bin yandex-music wlogout catppuccin-gtk-theme-frappe
 ```
 
 For pacman:

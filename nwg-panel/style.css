@@ -54,6 +54,7 @@ button {
 
 /* Top panel in sample config uses this name */
 #panel-top {
+  font-family: "Jetbrains Mono"
   background: #414559;
   color: #eeeeee;
 }

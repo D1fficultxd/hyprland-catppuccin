@@ -20,6 +20,7 @@ hypridle hyprlock hyprshot hyprutils hyprpaper hyprsunset
 flatpak bluez blueberry swaync
 libreoffice-still kdeconnect starship
 calcurse nwg-panel nwg-look
+qt5ct qt6ct
 ```
 For zsh:
 ```

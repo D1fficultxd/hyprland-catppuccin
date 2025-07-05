@@ -48,3 +48,12 @@ gtkrc-2.0
 waybar
 kdedefaults
 nwg-dock-hyprland
+gnome-session
+epiphany
+evolution  
+goa-1.0
+ibus
+calcurse
+systemd
+.gsd-keyboard.settings-ported
+baloofilerc

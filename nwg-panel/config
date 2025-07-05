@@ -77,7 +77,7 @@
       "window-margin-vertical": 0,
       "root-css-name": "controls-overview",
       "battery-low-level": 20,
-      "battery-low-interval": 3,
+      "battery-low-interval": 2,
       "processes-label": "Processes",
       "readme-label": "README",
       "angle": 0.0
@@ -128,14 +128,14 @@
     "playerctl": {
       "buttons-position": "left",
       "icon-size": 17,
-      "chars": 30,
+      "chars": 24,
       "scroll": false,
       "button-css-name": "",
       "label-css-name": "",
       "interval": 1,
       "show-cover": true,
       "cover-size": 24,
-      "angle": 0
+      "angle": 0.0
     },
     "menu-start": "off",
     "exclusive-zone": true,
